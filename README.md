@@ -1,5 +1,5 @@
 # customer-360-behavioral-analytics
-ETL xử lý Telecom Logs (JSON/Parquet) bằng PySpark & OpenAI tập trung vào Behavioral Data và Interaction Data 
+ETL xử lý Telecom Logs (JSON/Parquet) bằng PySpark & OpenAI tập trung vào Behavioral Data và Interaction Data
 
 ## 1. Customer 360 là gì?
 **Customer 360** là giải pháp xây dựng một cái nhìn toàn diện và thống nhất về khách hàng bằng cách tổng hợp dữ liệu từ tất cả các điểm chạm (touchpoints) và nguồn tương tác khác nhau trong hệ thống.
@@ -11,7 +11,11 @@ Trong dự án này, Customer 360 tập trung vào:
 
 ## 2. Quy trình thực hiện (Pipeline Process)
 
-![Overall Pipeline Flow](./image_for_readme/overall_pipeline_flow.jpg)
+<p align="center">
+  <img src="image_for_readme/overall_pipeline_flow.jpg" width="80%" alt="Overall Pipeline Flow">
+</p>
+
+
 
 Dự án được chia thành hai luồng xử lý độc lập trước khi tổng hợp về kho dữ liệu dùng chung:
 
@@ -43,14 +47,18 @@ Dữ liệu sau khi xử lý được trực quan hóa để phục vụ việc 
 * **Mức độ hoạt động**: **71.64%** (1.38M) người dùng thuộc nhóm **High Active**, trong khi **28.36%** (0.54M) thuộc nhóm **Low Active**.
 * **Nội dung phổ biến**: "Truyền Hình" là danh mục có lượng tiêu thụ lớn nhất.
 
-![Dashboard Content Overview](./image_for_readme/dashboard_content_overview.jpg)
+<p align="center">
+  <img src="image_for_readme/dashboard_content_overview.jpg" width="85%" alt="Dashboard Content Overview">
+</p>
 
 ### Phân tích tìm kiếm & Xu hướng (Tháng 6 - Tháng 7)
 * **Sở thích tìm kiếm**: Thể loại **Drama** dẫn đầu lượng tìm kiếm trong cả hai tháng, tiếp theo là **C Drama** và **Animation**.
 * **Biến động hành vi**: Gần **69.13%** người dùng đã thay đổi sở thích tìm kiếm chủ đạo khi bước sang tháng mới (`Changed behavior`).
 * **Các luồng chuyển dịch chính**: Người dùng thường xuyên thay đổi giữa **Drama - C Drama**, **Drama - Romance** hoặc **Romance - Drama**.
 
-![Dashboard Search Transitions](./image_for_readme/dashboard_search_behavior.jpg)
+<p align="center">
+  <img src="image_for_readme/dashboard_search_behavior.jpg" width="85%" alt="Dashboard Search Transitions">
+</p>
 
 ## 5. Công nghệ sử dụng (Tech Stack)
 
@@ -58,4 +66,4 @@ Dữ liệu sau khi xử lý được trực quan hóa để phục vụ việc 
 * **Xử lý dữ liệu:** PySpark (Spark SQL, Window Functions).
 * **AI & NLP:** OpenAI API (GPT-4o-mini).
 * **Lưu trữ:** MySQL (qua JDBC), CSV.
-* **Phân tích & Trực quan hóa:** Power BI
+* **Phân tích & Trực quan hóa:** Power BI.
