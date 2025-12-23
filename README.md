@@ -3,7 +3,7 @@ ETL xử lý Telecom Logs (JSON/Parquet) bằng PySpark & OpenAI tập trung và
 
 ## 1. Sơ đồ quy trình tổng quát (Overall Pipeline Flow)
 
-![Overall Pipeline Flow](image_for_readme/overall_pipeline_flow.jpg)
+![Overall Pipeline Flow](Image_for_readme/pipeline_flow.jpg)
 
 Dự án được triển khai theo một quy trình khép kín từ trích xuất dữ liệu thô đến trực quan hóa thông tin chi tiết:
 1. **Dữ liệu đầu vào**: Thu thập từ Log Content (JSON) và Log Search (Parquet).
@@ -45,14 +45,14 @@ Dự án được triển khai theo một quy trình khép kín từ trích xu�
 * **Mức độ hoạt động**: **71.64%** người dùng thuộc nhóm **High Active**, trong khi **28.36%** thuộc nhóm **Low Active**.
 * **Nội dung phổ biến**: "Truyền Hình" là danh mục có lượng tiêu thụ lớn nhất.
 
-![Dashboard Content Overview](image_for_readme/dashboard_content_overview.jpg)
+![Dashboard Content Overview](Image_for_readme/dashboard_content_overview.jpg)
 
 ### Phân tích tìm kiếm & Xu hướng (Tháng 6 - Tháng 7)
 * **Sở thích tìm kiếm**: Thể loại **Drama** dẫn đầu lượng tìm kiếm trong cả hai tháng.
 * **Biến động hành vi**: Gần **69.13%** người dùng đã thay đổi sở thích tìm kiếm chủ đạo (`Changed behavior`).
 * **Các luồng chuyển dịch chính**: Người dùng thường xuyên thay đổi giữa **Drama - C Drama**, **Drama - Romance** hoặc **Romance - Drama**.
 
-![Dashboard Search Transitions](image_for_readme/dashboard_search_behavior.jpg)
+![Dashboard Search Transitions](Image_for_readme/dashboard_search_behavior.jpg)
 
 ## 6. Công nghệ sử dụng (Tech Stack)
 
